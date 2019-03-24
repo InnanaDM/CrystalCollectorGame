@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Crystal Collector Game</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+    </head>
+
+<body>
+    <!-- starts top container holding general info abt game -->
+    <div id="container">
+    <div id="wrap">
+    <h1><span>Crystal Collector Game</span></h1>
+<!-- .howToPlay -->
+    <div id="howToPlay">
+        <p>
+            <h4>How to Play</h4>
+            <hr>A random number will be displayed at the start of the game. Your goal is to make your points match the
+            random number by choosing the right crystals.
+        </p>
+
+        <p>The four crystals below each hold a number value that will increase your points respectively when you click
+            one.</p>
+
+        <p>If your points match the random number, then YOU WIN.
+            If your points equal more than the random number given, then you lose.
+        </p>
+<!-- ends div instructions -->
+    </div>
+    <!-- starts div that shows user score -->
+    <!-- .container #matchNum .numVal -->
+    <div class="container">
+        <div id="matchNum">
+            <h3>Match this Number: <span class="numVal"></span></h3>
+            <!-- ends div -->
+        </div>
+        <!-- scoreboard -->
+        <div id="userScoreBox">
+            <!-- wins and losses score -->
+            <h3><span id="userScores"></span></h3>
+            <h3>Wins: <span id="wins"></span></h3>
+            <h3>Losses: <span id="losses"></span></h3>
+        </div>
+    </div>
+    <!--AL closes div that shows user score  -->
+
+    <!-- starts div named crystals -->
+    <div id="crystals"></div>
+    <div id ="userPoints">
+        <h2 id ="userCrystalPoints">YOUR TOTAL SCORE IS: <span id="userStartScore">0</span></h2>
+    </div>
+    <!-- AL closes crystals div -->
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+    <footer>Innana D'Abreau 2019</footer>
+     </body> 
+     </html>
